@@ -1,6 +1,5 @@
-palavra = 'piroca'
+lista = ['Maria', 'Helena', 'Luiz']
+lista.append('João')
 
-for ('palavra'):
-    print(palavra[i])
-    i += 1
-
+for indice, nome in enumerate(lista):
+    print(indice, nome, lista[indice])
