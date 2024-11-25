@@ -1,5 +1,7 @@
-lista = ['Maria', 'Helena', 'Luiz']
-lista.append('João')
+sala = [
+    ['roberta', 'andre', 'alexandre'],
+    ['mario', 'paula'],
+    ['robervaldo', 'giovana', 'mateus', 'guilherme', (0, 1, 2, 3, 4, 5)]
+]
 
-for indice, nome in enumerate(lista):
-    print(indice, nome, lista[indice])
+print(sala[2][4][2])
