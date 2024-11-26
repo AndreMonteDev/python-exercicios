@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logica de Programacao Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Logica de Programacao com Javascript</h1>
+
+       
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, modi nam. Eum dignissimos quibusdam voluptate alias deserunt quasi! Sapiente, eaque. Saepe, dolore at! Iure accusamus ullam et iste blanditiis atque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis aut possimus obcaecati, quod voluptatibus nihil illo doloremque aliquid ratione officia incidunt deleniti voluptates animi eos, distinctio cum dolorum at exercitationem?</p>
+
+    <script>
+
+        var paragrafo = document.getElementsByTagName('p');
+        var palavras = (paragrafo[0].textContent);
+
+        var parragrafoArray = palavras.split(' ');
+        
+ //       for(i = 0 ; i < parragrafoArray.length ; i++){
+   //         console.log(i + " " + parragrafoArray[i]);
+     //   }
+        
+        for(i = 0 ; i < 20 ; i++){
+            var paragrafoModificado = parragrafoArray.join(' ') + ('...');
+        }
+
+        paragrafo.innerHTML = paragrafoModificado.innerHTML;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+    </body>
+</html>
+

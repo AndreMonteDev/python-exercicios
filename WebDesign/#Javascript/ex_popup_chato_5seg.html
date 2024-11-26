@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logica de Programacao Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Logica de Programacao com Javascript</h1>
+
+        <script>
+            popupInterval = setInterval(popup, 5000);
+            function popup(){
+                alert("Esse é um popup irritante");
+            }
+
+            popupClean = setInterval(closePopup, 5000);
+                function closePopup(){
+                    clearInterval(popupInterval);
+                }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Logica de Programacao Javascript
+        </title>
+    </head>
+    <body>
+        <h1>Logica de Programacao com Javascript</h1>
+
+        <button onclick="area(largura, altura)">Area</button>
+
+        <div id="output"></div>
+
+        <script>
+            var largura = prompt("digite a largura: ");
+            largura = parseFloat(largura);
+
+            var altura = prompt("digite a altura: ");
+            altura = parseFloat(altura);
+
+            function area(l, a){
+                areaTotal = l * a;
+                escreve();
+            }
+
+            function escreve(){
+                var output = document.querySelector('#output');
+                output.innerHTML = ('Area total: ' + areaTotal);
+            }
+        </script>
+
+    </body>
+</html>

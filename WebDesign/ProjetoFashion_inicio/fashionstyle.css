@@ -1,0 +1,125 @@
+body{
+    font-family: arial, sans-serif;
+    background: white;
+    margin: 0;
+    padding: 4% 10%;
+    border: solid 1px red;
+}
+
+.inicio{
+    position: relative;
+    border: solid 3px pink;
+    height: 500px;
+    background-position: left;
+    background-size: cover;
+    background-image: url(/imagens/topo.jpg);
+    overflow: auto  ;
+}
+
+.fashion{
+    background-color: black;
+    width: 97%;
+    border: solid 2px silver;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-right: 20px;
+}
+
+
+
+.links-top a{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    position: relative;
+    left: 660px
+}
+
+/*
+.fashion a{
+    position: fixed;
+    right: 3px;
+    top: 2px;
+    width: 100%;
+    height: 40px;
+    border: solid 2px blueviolet;
+}
+
+.fashion a{
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+.links{
+    text-transform: uppercase;
+    display: block;
+    width: 300px;
+    height: 200px;
+    border: solid silver;
+    float: left;
+    clear: both;
+    ;
+}
+
+
+.links{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.links ul li a{
+    text-align: right;
+    list-style: none;
+}
+*/
+.artigo-texto{
+
+    text-align: center;
+    padding: 20px;
+}
+
+.modelos{
+    width: 100%;
+    height: 260px;
+    display:inline-block;
+}
+
+.modelos img{
+    width: 200px;
+    height: auto;
+}
+
+.modelo1{
+    margin-right: 20px;
+    float: left;
+    box-sizing: border-box;
+    position:relative;
+}
+
+.modelo2{
+    margin-right: 20px;
+    float: left;
+    position: relative;
+}
+
+.modelo3{
+   float: left;
+}
+
+.texto2{
+    background-image: url(/imagens/bg_detalhe.png);
+    width: auto;
+    padding: 40px 40px;
+    text-align: justify;
+    color: aliceblue;
+}
+
+.texto2 h1{
+    text-transform: uppercase;
+}
+
+.texto2 p{
+    margin-right: 200px;
+}

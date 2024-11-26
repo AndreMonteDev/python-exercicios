@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Logica de Programacao Javascript
+        </title>
+    </head>
+    <body>
+        <h1>Logica de Programacao com Javascript_Arrays</h1>
+    
+        <div id="output"></div>
+    </body>
+
+</html>
+
+<script>
+    
+    var produtos = new Array('caneta', 'laps', 'tesoura','borracha','caderno','livro');
+
+    var output = document.querySelector('#output');
+
+    var msg = '';
+
+    for(i = 0; i < produtos.length ; i++){
+        msg += 'produto ' + (i + 1) + ': ' + produtos[i] + '<br>';
+    }
+
+    output.innerHTML = msg;
+</script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Logica de Programacao Javascript
+        </title>
+    </head>
+    <body>
+        <h1>Logica de Programacao com Javascript_Arrays</h1>
+    
+        <div id="output"></div>
+    </body>
+
+</html>
+
+<script>
+    
+    var produtos = new Array('caneta', 'laps', 'tesoura','borracha','caderno','livro');
+
+    var output = document.querySelector('#output');
+
+    var msg = '';
+        
+    var dias = new Array('domingo','segunda','terça','quarta','quinta','sexta','sabado');
+
+    var hoje = new Date();
+    var diaSemana = hoje.getDay();
+
+    msg = ('Bem vindo, hoje é ' + dias[diaSemana]);
+
+    alert(msg);
+    
+    output.innerHTML = msg;
+</script>

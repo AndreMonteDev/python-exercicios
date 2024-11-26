@@ -1,0 +1,132 @@
+body{
+    background-image: linear-gradient(to top, #010d33 0%, #330867 50%, black 100%);
+    color: rgb(122, 142, 160);
+    font-family: rubik, sans-serif;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+h1{
+    color:rgb(72, 193, 233);
+    font-size: 3em;
+}
+
+h2, h3{
+    color: beige;
+}
+
+.top-header{
+    height: 100%;
+    display: flex;
+    flex-wrap:nowrap;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.div-logo{
+    margin-left: 20px;
+}
+
+.div-logo a img{
+    width: 150px;
+}
+
+.top-nav{
+    height: 100%;
+    margin-right: 20px;
+
+}
+
+.top-nav ul{
+    list-style: none;
+    background-color: #010d33;
+    padding: 1em;
+    border-radius: 1em;  
+    border-right: solid rgb(120, 93, 184) .2em;
+    border-bottom: solid rgb(120, 93, 184) .2em;
+}
+
+.top-nav a{
+    text-decoration: none;
+    display: block;
+    padding: .3em;
+    color: rgb(184, 93, 156);
+    margin: 0;
+}
+
+.top-nav a:hover{
+    color: #941e6c;
+    transition: cubic-bezier(.98,-0.3,.13,1.47)
+}
+
+.top-main{
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+.paragrafo1{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.paragrafo1 img{
+    width: 30%;
+    height: auto;
+    float: left;
+    padding-right: 2em;
+}
+
+.paragrafo2{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.paragrafo2 img{
+    width: 30%;
+    height: auto;
+    float: right;
+    padding-left: 2em;
+}
+
+.section-cards{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr)
+}
+
+.rodape{
+    padding: 2em;
+}
+
+.ul-icons{
+    list-style: none;
+
+}
+
+.ul-icons a{
+    text-decoration: none;
+}
+
+.fa-twitter{
+    margin-left: 3em;
+    color:aqua;
+    font-size: large;
+}
+
+.fa-facebook-square{
+    margin-left: 2em;
+    color:aqua;
+    font-size: large;
+}
+
+.escuro{
+    background-color: black;
+}

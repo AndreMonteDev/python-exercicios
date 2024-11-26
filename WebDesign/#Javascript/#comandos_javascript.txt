@@ -1,0 +1,358 @@
+2OPERADORES
++ adição
+- subtração
+* multiplicação
+/ divisão
+% módulo
+** esponenciação
+++ incremento
+-- decremento
+! não not
+&& e and
+|| ou or
+
+=======================
+
+typeof - exibir tipo de variavel
+
+var - atribuir variavel
+
+prompt - solicitar entrada
+
+alert - exibe janela de alerta
+
+parseInt - transforma número para inteiro
+
+parseFloat - transforma para número real
+
+math.random() - número randomico de 0 a 0.99
+
+while() - enquanto (repetição)
+
+do while - faz a primeira condição
+
+for (var i=1; i <=10 ; i++) { - repetição for
+
+isNaN() verificar se é not a number
+
+throw new Error() - passar erro para console
+
+try{} catch(erro){} - captura erro ao invés de mostrar no console
+ 
+var nome = new Array() - cria uma variavel Array
+
+nomeVariavel.lenght - tamanho da array
+
+var hoje = new Date(); - armazena a data na variavel
+
+hoje.getDay() - informa o dia da semana 0-domingo 1-segunda etc
+
+array() - array
+
+object() - objeto
+
+BOM - Objeto do Browser
+===
+innerHight - retorna altura do browser
+
+innerWidth - retorna largura do browser
+
+outerHeight - altura externa
+
+outerWidth - largura externa
+
+opener
+
+pageXoffset - quantidade de scrooler feito
+
+pageYoffset - quantidade de scrooler feito
+
+screenX / screenY - quantidade de movimento da janela do browser
+
+history
+
+history.lenght - quantidade de páginas navegadas
+
+.go() - 1 ou foward avança para pagina seguinte / -1 ou back volta pagina
+
+location - informações de url
+
+location.href - mostra url que está navegando
+
+location.hash - mostra hash de endereço
+
+location.reload() - refresh
+
+navigator - informações do navegador
+
+navigator.userAgent - inf. e requisicao de paginas
+
+navigator.plugins - inf. de plugins
+
+navigator.cookieEnabled - inf. de cookies está abilitado
+
+screen - informações referentes à tela
+
+open - abre outra aba com url
+ex: window.open('http://google.com')
+
+
+
+
+DOM
+====
+
+document
+
+getElementById - acessar o HTML por id
+ex: document.getElementById('pmain').textContent = 'texto alterado';
+altera texto do paragrafo <p>
+
+getElementsByTagName - acessa pela tag. <p> <h1> etc
+ex: document.getElementsByTagName('p')[0]
+
+getElementsByClassName - acessa HTML por classe
+caso tenha 2 objetos com a mesma classe, é necessário acessar pelo indice
+exemplo: document.getElementsByClassName('paragrafos')[1].textContent =
+'texto alterado'
+
+querySelector - acessa objeto pelo tipo # id . classe etc
+sempre seleciona 1 objeto
+ex: document.querySelector('#idmain p') - por id paragrafo
+igual css
+
+querySelectorAll - acessa todos objetos pelo tipo
+
+innerHTML - interpreta alteração como HTML
+ex: document.querySelector('#msg').innerHTML = 'Bem-vindo, <b>' + nome +'</b>
+
+value - acessar texto de formulario 
+
+Aproveito para mostrar outras propriedades que diferem do HTML e Javascript:
+
+atributo no HTML     |  propriedade no Javascript
+
+for |  forhtml
+
+class |  className
+
+readonly   |  readOnly
+
+maxlength   | maxLength
+
+cellspacing   |  cellSpacing
+
+rowspan   |  rowSpan
+
+colspan   |  colSpan
+
+tabindex   |  tabIndex
+
+cellpadding   |  cellPadding
+
+contenteditable    |  contentEditable
+
+frameborder    |  frameBorder
+
+usemap   |  useMap
+
+
+Eventos
+=======
+addEventListener - adiciona evento
+ex: btn1.addEventListener("click", function(){
+	alert('clicou com dom level 2');
+
+e.preventDefaul(); - previne comportamento padrão
+ex: enviar formulário
+
+"keypress" 
+"keyup"
+"keydown"
+eventos de teclas digitadas
+
+"input" evento de entrada de dados
+
+Strings
+=======
+.lenght - exibe número de caracteres
+
+.replace - substitui caractere por outro
+ex: teste.replace('i', 'I') 
+substitui i por I
+
+.indexOf - indica onde está o caractere
+ex: teste.indexOf('A')
+exibe o número da posição do caractere A
+
+.lastIdexOf - igual o indexOf mas procura à partir do final
+
+.slice - corta a string
+ex:  teste.slice(5, 10) - exibe string da posição 5 até a 10
+
+.substring - igual slice mas pode enviar os parametros invertidos
+
+.split - divide a string em partes e retorna um array das partes
+
+ex: teste.split(' ')
+divide a string por espaços (ex: ['minha', 'string']
+
+toUpperCase - transforma string em maiuscula
+ex: teste.toUpperCase()
+
+toLowerCase - transforma string em minúscula
+ex: teste.toLowerCase()
+
+valueOf - retorna valor primitivo (prototype)
+
+
+
+Math
+====
+
+.min() - informa menor valor
+ex: Math.min(2,4,6,1) - resultado 1
+
+.max() - informa maior valor
+
+.round() - aredonda número
+
+.floor() - arredonda número para baixo
+
+. ceil() - arredonda número para cima
+
+.pow() - retorna potencia
+** faz exponenciação também, ex: 2 ** 3
+ex: Math.pow(2,3) - tres ao cubo resultado 8
+
+.sqrt() - retorna raiz quadrada
+ex: Math.sqrt(25) - resultado 5
+
+Math.cbrt() - raíz cúbica
+
+.random() - número randomico de 0 a 1
+ex: Math.random(
+
+
+Arrays
+======
+
+.every - verifica se elementos da array são true ou false
+ex: arr.every(functio(elemento, indice, obj){
+}
+obj: se houver qualquer elemento false, retorna false
+
+.some() - se houver apenas um true, retorna true
+
+.filter() - filtra apenas os elementos do tipo solicitado
+ex: var numeros = arr.filter(function(elemento, indice, arr){
+	return typeof el === 'number';
+	 }
+retorna apenas números
+	
+.forEach() - fazer loop para retornar o array
+
+.indexOf(), lastOf() - indica a posição do elemento à partir do índice informado
+ex: var posicaoStr1 = arr.indexOf('string', indice);
+resultado: posicaoStr1 = 5
+
+.map - modificar elementos
+numeros = numeros.map(function(el, i, arr) {
+	return el * i;
+retorna a array com os números multiplicados elemento por indice
+
+.concat() - concatena 2 arrays
+ex: var arr2 = arr.concat(numeros)
+concatena array "arr" com array "numeros"
+
+.join() - transforma array numa string separado por , ou por algum caracter escolhido por parâmetro
+ex: var str = arr.join(' - ');
+retorna: 1 - 2 - 3 - 4 - etc...
+
+.push - inclui elemento à uma array
+ex: arr.push('novo item')
+retorna: 1, 2, 3, 4, "novo item"
+
+.pop - exclui o último item de uma array e armazena numa variavel
+
+ex: var ultimoItem = arr.pop();
+ultimo item = "novo item"
+
+.shift - igual o pop, mas remove o 1o item
+ex: var primeiroItem = arr.shift();
+
+.unshift - acrescenta item no início
+ex: arr.unshift('item 1', 'item 2')
+
+.reduce() - pega array e retorna um valor
+ex: var somaDeArr = numeros.reduce(function(anterior, atual){
+	return anterior + atual; }
+retorna a soma dos números da array
+obs: é necessário sempre passar os parametros da funcção (anterior, atual)
+
+.reverce - inverte array
+
+.slice - extrai parte de uma array
+
+.splice - excluí e insere elementos
+1o parametro é a posição de começo
+2o parametro quandos elementos remove a partir do 1o parametro
+3o parametro - quantos elementos quer incluir
+
+
+Date
+====
+
+* precisa sempre ser instanciado (receber new)
+ex var minhaData = new Date()
+
+Date() - mostra data atual
+
+.getDay() - mostra dia da semana
+ex: minhaData.getDay()
+
+.getDate() - mostra dia do mês
+
+.getMonth() - mostra mês
+
+.getFullYear() - ano
+
+.getHours() - Hora
+
+.getMinutes() - Minutos
+
+.getTime() - timestamp (número de milisegundos que passaram desde 1970
+
+.setDate() - define dia
+
+.setTime() - define hora
+
+.setYear() - define ano
+
+	
+Temporizadores (só executa no browser)
+==============
+
+setTimeout(funcao, ms) - executa uma função aós intervalo de tempo em ms
+
+setInterval(funcao, ms) - executa uma função a cada intervalo de tempo
+
+clearInterval(intervado) - cancela o temporizador
+
+
+
+BOM
+===
+
+window.addEventListener('load', function(e)
+evento load
+
+resize
+
+scroll 
+
+unload
+
+beforeunload
+
+

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+        
+        <script>
+            
+            var n1 = prompt("digite uma nota n1: ");
+            n1 = parseFloat(n1);
+
+            var n2 = prompt("digite outra nota n2: ");
+            n2 = parseFloat(n2);
+
+            m = ((n1 + n2) / 2);
+
+            if (m > 5 && n1 > 0 && n2 > 0) {
+                alert("A média " + m + " é maior do que 5. Parabéns, você foi aprovado!"); }
+            else {
+                alert("A média " + m + " é menor do que 5, ou uma das notas foi 0. Você não foi aprovado."); }
+            
+        </script>
+    </body>
+</html>

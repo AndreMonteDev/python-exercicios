@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+html{
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.logo-nav-frase{
+    display: flex;
+    border: solid 1px pink;
+    
+
+}
+
+.nav-frase{
+    margin-left: 30%;
+    display: flex;
+    border: solid 1px yellow;
+    flex-direction: column;
+    align-self: flex-end;    
+}
+
+.top-nav{
+    background: red;
+    text-align: center;
+}
+
+
+.top-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-nav a{
+    text-decoration: none;
+    padding: 1em;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-predios img{
+    size: 20%;
+}
+

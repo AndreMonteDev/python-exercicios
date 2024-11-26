@@ -1,0 +1,52 @@
+HTML
+.html
+<!doctype html> tipo de documento
+<html lang="pt-br">
+<meta charset="utf-8"> tipo de caractere
+
+<head> cabeçalho>
+
+<body> pagina
+
+
+
+<h1> </h1> titulo
+
+<p> </p> paragrafo
+
+<b> </b> negrigo
+
+<i> italico
+
+<em> italico semantico
+
+<strong> negrito semantico
+
+<br> quebra de linha
+
+<hr> quebra linha e insere linha visivel
+
+<ul> lista não ordenada
+
+<ul>
+	<li></li>
+</ul>
+
+<ol> lista ordenada
+	<li></li>
+</ol>
+
+<a> link ancora
+<a> href="http://www...com.br">HTML5</a>
+
+target ="_blank">...  abrir link em outra aba
+
+<img> inserir imagem
+	src imagem
+	alt imagem ou testo alternativa
+
+<script> outra linguagem
+	src
+
+<meta name> texto que aparecerá na busca
+

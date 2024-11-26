@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+html{
+    font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Oxygen";
+}
+
+.top-header{
+    text-align: center;
+}
+
+.top-header-logo{
+    margin: .5em;
+}
+
+.top-nav{
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.top-nav ul{
+    padding: 0%;
+    list-style: none;
+    text-align: center;
+}
+
+.top-nav a{
+    text-decoration: none;
+    display: block;
+    padding: 1.5em;
+    color: white;
+    border: .2em solid transparent;
+}
+
+.top-nav a:hover{
+    border: .2em solid rgb(66, 4, 28);
+    transition: .5s;
+    font-weight: bold;
+}
+
+/*section h1{
+    font-size: 1.5em;
+}
+
+section h2{
+    font-size: 1em;
+}
+*/
+section{
+    text-align: center;
+}
+
+.top-title{
+    color: #612674;
+    background: #f6f6f6;
+}
+
+.top-subtitle{
+    color:#a87bb7;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.button{
+    padding: .75em 2.5em;
+    display: inline-block;
+    text-decoration: none;
+    background: rgb(158, 158, 240);
+    color: rgb(90, 1, 102);
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.button:hover{
+    background: #813e97;
+    border: 2px solid rgb(90, 1, 102);
+    transition: .5s;
+}

@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versao do html que deve ser renderizada-->
+<html lang="pt-br">
+
+    <head>
+        <title>
+            pagina de exemplo estrutura basica
+        </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Andre">
+        <meta name="description" content="lista de documento">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+<style>
+    .top-header{
+        background-color: bisque;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .logo_home img{
+        width: 210px;
+    }
+
+    .top-header h1{
+        margin-top: 80px;
+    }
+
+    .btn--dark{
+        border-radius: 20px;
+        background-color: rgb(232, 241, 176);
+        height: 50px;
+        width: 80px;
+        align-items: center;
+        margin-top: 50px;
+        margin-right: 20px;
+        border: solid 2px;
+    }
+
+    .btn--dark:hover{
+        border: solid 4px;
+        transition: linear;
+    }
+
+    .btn--dark--after{
+        background-color: chartreuse;
+    }
+</style>
+    
+
+<body>
+    <header class="top-header">
+        <div class="div-logo">
+            <a href="index.html" class="logo_home">
+                <img src="images/logo_astronalta.png" alt="logo_astronalta">
+            </a>
+        </div>
+
+        <h1> Space Fish</h1>
+
+        <nav class="top-nav">
+            <ul class="menu">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="#">Quem Somos</a></li>
+                <li> <a href="#">Serviços</a></li>
+                <li> <a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn--dark">Modo Escuro</button>
+
+        
+    </header>
+
+    <main class="top-main">
+        <section class="section1">
+            <article class="article1-1">
+                <h2>Titulo do Artigo</h2>
+                <p>Paragrafo do artigo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequatur natus nulla placeat temporibus, accusamus nam cumque dolor illum! Atque consequuntur consectetur necessitatibus facilis aliquam facere iusto vel officiis ratione?</p>
+            </article>
+        </section>
+
+        <section class="section2">
+            <article class="article2-1">
+                <div class="paragrafo1">
+                    <h2>Imagem entre o texto</h2>
+                    <img src="images/imagem2.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta harum repellendus et unde praesentium esse distinctio, sint, officia eaque commodi obcaecati beatae quas tempora assumenda quos adipisci eligendi! Voluptates? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem harum libero, voluptate id quod mollitia veniam sequi debitis illum atque pariatur nam aperiam fugiat consequuntur architecto cumque, totam sint odit.</p>
+                </div>
+
+                <div class="paragrafo2">
+                    <h2>Imagem entre o texto</h2>
+                    <img src="images/imagem3.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta harum repellendus et unde praesentium esse distinctio, sint, officia eaque commodi obcaecati beatae quas tempora assumenda quos adipisci eligendi! Voluptates? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem harum libero, voluptate id quod mollitia veniam sequi debitis illum atque pariatur nam aperiam fugiat consequuntur architecto cumque, totam sint odit.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="section-cards">
+            <article class="article_card1">
+                <img src="images/card_01.jpg" alt="card 1">
+                <h3>Card 1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam reiciendis hic ipsam, eaque dolores culpa? Perspiciatis, reiciendis pariatur itaque distinctio vel adipisci. Voluptate odio voluptatum asperiores ea magnam, neque expedita!</p>
+            </article>
+
+            <article class="article-card2">
+                <img src="images/card_02.jpg" alt="card 2">
+                <h3>Card 1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam reiciendis hic ipsam, eaque dolores culpa? Perspiciatis, reiciendis pariatur itaque distinctio vel adipisci. Voluptate odio voluptatum asperiores ea magnam, neque expedita!</p>
+            </article>
+
+            <article class="article-card1">
+                <img src="images/card_03.jpg" alt="card 1">
+                <h3>Card 1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam reiciendis hic ipsam, eaque dolores culpa? Perspiciatis, reiciendis pariatur itaque distinctio vel adipisci. Voluptate odio voluptatum asperiores ea magnam, neque expedita!</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Fale conosco</p>
+
+        <ul class="ul-icons">
+            <li><a href="#" class="icon-link"><span class="hidden">Twitter</span><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="icon-link"><span class="hidden">Facebook</span><i class="fab fa-facebook-square"></i></a></li>
+        </ul>
+        
+    </footer>
+
+    <script>
+
+        var $btnDark = document.querySelector('.btn--dark');
+        $btnDark.addEventListener('click', function(e){
+            console.log('clicou no botão');
+        })
+        
+        var paragrafo = document.getElementsByTagName('p');
+        var x = 0;
+        while(document.getElementsByTagName('p')[x]){
+            document.getElementsByTagName('p')[x].textContent = x + 'Essa Página foi hackeada' ;
+            x++
+        }
+            
+    </script>
+
+</body>
+

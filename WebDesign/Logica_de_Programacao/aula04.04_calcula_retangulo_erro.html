@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Logica de Programacao Javascript
+        </title>
+    </head>
+    <body>
+        <h1>Logica de Programacao com Javascript</h1>
+
+        <div id="output"></div>
+
+        <script>
+
+            var n1 = prompt('digite um número n1: ');
+            if (isNaN(n1)){
+                alert('Não é um número válido');
+           }
+            else{
+                n1 = parseFloat(n1);
+            }
+
+            var n2 = prompt('digite um número n1: ');
+            if (isNaN(n2)){
+                alert('Não é um número válido');
+            }
+            else{
+                n2 = parseFloat(n2);
+            }
+
+            function areaRetangulo(num1, num2){
+                return(num1 * num2)
+            }
+
+            var output = document.querySelector('#output');
+
+            console.log(output);
+
+            output.innerHTML = areaRetangulo(n1, n2);
+
+        </script>
+
+    </body>
+</html>

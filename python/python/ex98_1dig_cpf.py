@@ -24,3 +24,5 @@ else:
     digito_1 = cpf_resto_div_11
 
 print(f'O primeiro digito do cpf é {digito_1}')
+
+print(dig1, dig2, dig3, dig4, dig5, dig6, dig7, dig8,  dig9)

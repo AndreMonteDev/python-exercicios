@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logica de Programacao Javascript</title>
+        <meta charset="utf-8">
+        <style>
+            .done{
+                text-decoration: line-through;
+                color: blueviolet;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <h1>Logica de Programacao com Javascript</h1>
+
+        <input class="input">
+        <button class="btnAdd">add</button>
+
+        <h2>Lista de Tarefas</h2>
+        <ul class="listaDeTarefas">
+            <li>Estudar Javascript</li>
+            <li>Estudar CSS</li>
+            <li>Estudar HTML</li>
+            <li>Estudar bootstrap</li>
+        </ul>
+
+        <script>
+            let $input = document.querySelector('input');
+            let $buttonAdd = document.querySelector('.btnAdd');
+            let $ul = document.querySelector('ul');
+            let $lis = document.querySelectorAll('li');
+
+            $buttonAdd.addEventListener('click', addTask);
+            
+            for(var i = 0; i < $lis.length; i++){
+                $lis[i].addEventListener('click', toogleDone);
+            }
+            
+
+            function addTask(){
+                let task = '<li>' + $input.value + '</li>';
+                $ul.innerHTML += task;    
+            }
+
+            function toogleDone(){
+            this.classList.toggle('done');
+            }
+
+        </script>
+
+
+    </body>
+</html>

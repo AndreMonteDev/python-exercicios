@@ -1,0 +1,30 @@
+<style>
+     body{
+                background-color: darkgray;
+            }
+            h1{
+                font-family: Arial, Arial, Helvetica, sans-serif;
+                font-size: 48px;
+                font-style:normal;
+                font-variant: small-caps;
+                color: red;
+                background-color: aquamarine;
+            }
+
+            p{
+                font-variant: small-caps;
+                text-align: left;
+                text-decoration: solid ;
+                text-indent: 50px;
+            }
+
+float
+
+box-sizing: border-box - mantem o tamanho idependente do padding
+
+clear: left / right / both ignora o float anterior
+
+overflow: auto (div principal)
+
+
+

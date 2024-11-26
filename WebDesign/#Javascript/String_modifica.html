@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logica de Programacao Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Logica de Programacao com Javascript</h1>
+
+    <script>
+        let stringNome = 'Andre Luiz Monte';
+        let nomeFormatado = modificaString(stringNome);
+
+        function modificaString(nome) {
+            stringCortada = stringNome.split(' ');
+            for (i=0 ; i < stringCortada.length ; i++){
+                ultimoNome = stringCortada[i];
+            }
+            primeiroNome = stringCortada[0];
+            segundoNome = stringCortada[2];
+            
+            console.log(ultimoNome);
+
+
+
+        }
+
+        modificaString('Daniel Tobias Aguiar');
+        console.log(ultimoNome + ', ' + primeiroNome + ' ' + segundoNome);
+    </script>
+
+    </body>
+</html>
