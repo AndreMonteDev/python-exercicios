@@ -1,7 +1,9 @@
-sala = [
-    ['roberta', 'andre', 'alexandre'],
-    ['mario', 'paula'],
-    ['robervaldo', 'giovana', 'mateus', 'guilherme', (0, 1, 2, 3, 4, 5)]
-]
+import random
 
-print(sala[2][4][2])
+cpf_aleatorio = ''
+
+for numero in range(9):
+    numero_aleatorio = random.randint(0, 9)
+    cpf_aleatorio += str(numero_aleatorio)
+    
+print(cpf_aleatorio)
