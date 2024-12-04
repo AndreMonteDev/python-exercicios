@@ -1,5 +1,4 @@
 
-
 # def multiplica(*args):
 #     multiplicacao_resultado = 1
 #     for numero in args:
