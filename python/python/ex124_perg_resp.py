@@ -25,13 +25,13 @@ for pergunta in perguntas:
     print(f'')
     print('Opções:')
     
-    n = 0
+    indice = 0
     for opcao in pergunta['Opcoes']:
-        print(f'{n}) {opcao}')
-        n += 1
+        print(f'{indice}) {opcao}')
+        indice += 1
 
     opcao_digitada = input('Escolha uma opção: ')
 
-    opcao_escolhida = perguntas[pergunta]['Opcoes'][opcao_digitada]
+    opcao_escolhida = pergunta['Opcoes'][int(opcao_digitada)]
 
     print(opcao_escolhida)
