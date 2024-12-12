@@ -18,6 +18,7 @@ perguntas = [
     },
 ]
 
+pontos = 0
 
 for pergunta in perguntas:
     print(f'')
@@ -30,8 +31,19 @@ for pergunta in perguntas:
         print(f'{indice}) {opcao}')
         indice += 1
 
-    opcao_digitada = input('Escolha uma opção: ')
+    try:
 
-    opcao_escolhida = pergunta['Opcoes'][int(opcao_digitada)]
+        opcao_digitada = input('Escolha uma opção: ')
+        opcao_escolhida = pergunta['Opcoes'][int(opcao_digitada)]
+    
+        if opcao_escolhida == pergunta['Resposta']:
+            print('Acertou miseravi!')
+            pontos += 1
+        else:
+            print('Errou miseravi!')
+    
+    except (ValueError, IndexError):
+        print('Valor inválido!')
 
-    print(opcao_escolhida)
+print(f'Você acertou {pontos}')
+print(f'de {len(perguntas)} perguntas')
