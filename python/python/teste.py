@@ -1,6 +1,12 @@
-pessoa = [
-    {'nome': 'Andre'},
-    {'sobrenome' : 'Monte'},
-    ]
+produto = {
+    'nome': 'Caneta Azul',
+    'preco': 2.5,
+    'categoria': 'Escritorio',
+}
 
-print(pessoa{'nome'})
+def lista_dicionario(dicionario):
+    for chave, valor in dicionario.items():
+        print(chave, valor)
+    print()
+
+lista_dicionario(produto) 

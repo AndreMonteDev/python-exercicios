@@ -1,0 +1,3 @@
+nome = input('digite seu nome: ')
+
+print(f'Bem vindo {nome}! É um prazer te conhecer!')
