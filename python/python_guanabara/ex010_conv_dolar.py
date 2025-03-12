@@ -5,7 +5,7 @@ while True:
 
     try:
         numero = float(numero)
-        print(f'{numero} reais equivale a {numero} = {dolar * numero} dolares')
+        print(f'{numero} reais equivale a {numero} = {numero / dolar} dolares')
         break
     except ValueError:
         print('Favor digitar um número inteiro válido.')
