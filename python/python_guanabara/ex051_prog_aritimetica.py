@@ -4,6 +4,6 @@ termo = int(input('Digite o primeiro termo: '))
 razao = int(input('Digite a razão: '))
 
 for n in range(10):
-    print(termo)
+    print(termo, end=' -> ')
     termo += razao
 
