@@ -6,4 +6,3 @@ while i < 10:
     print(termo, end=' -> ')
     termo += razao
     i += 1
-print('FIM')

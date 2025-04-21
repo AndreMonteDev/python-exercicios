@@ -1,3 +1,4 @@
+# jogo que a pessoa tem que adivinhar o número
 import random
 n = 0
 numeroSorteado = random.randint(1, 10)

@@ -6,12 +6,12 @@ import os
 # print('[1] pedra ✊')
 # print('[2] papel 🖐️')
 # print('[3] tesoura ✌️')
-opcoes = {1:'pedra ✊', 2:'papel 🖐️',3:'tesoura ✌️'}
+opcoes = {1:'✊ pedra', 2:'🖐️ papel',3:'✌️ tesoura'}
 cpu = randint(1, 3)
 o = 10
 
 while o != 0:
-    input('Pressione qualquer tecla para continuar...')
+    input('Pressione (enter) tecla para continuar...')
     os.system('cls')
     print('**** JOGO DE JO KEN PO ****')
     print('-= Opções =-')

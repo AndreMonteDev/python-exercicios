@@ -19,4 +19,4 @@ for i in range(1, 5):
 media = soma / 4
 print(f'A média de idade do grupo é {media} anos')
 print(f'O homem mais velho tem {maior_idade} anos e se chama {mais_velho}')
-print(f'Ao todo são {mulheres_menores} com menos de 20 anos')
+print(f'Ao todo são {mulheres_menores} mulhereres com menos de 20 anos')

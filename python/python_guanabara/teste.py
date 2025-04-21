@@ -1,11 +1,10 @@
-from rich import print, inspect
+# exibe as vogais de cada palavra de uma tupla
 
-lista = list(range(1, 6))
-dicionario = {'Nome': 'André', 'Idade': '45'}
-nome = 'Meu nome é [reverse][green][b]André[/b][/green][/reverse]'
-frase = '[red on yellow b reverse]O Debian 11 (Bullseye) não vem com uma "loja de aplicativos" gráfica como o Ubuntu Software Center por padrão. No entanto, ele possui algumas opções para instalar programas de forma gráfica, dependendo do ambiente de desktop que você está usando.[/]'
-print(lista)
-print(dicionario)
-print(nome)
-print(frase)
-## inspect(lista)
+tupla = ('abacaxi', 'banana', 'linguiça', 'bolo', 'computador', 'origami', 'salada', 'palhaço', 'cagada', 'cerveja', 'tubaina')
+
+for palavra in tupla:
+    print(f'Na palavra {palavra} temos as vogais: ', end='')
+    for letra in palavra:
+        if letra.lower() in 'aeiou':
+            print(letra, end=' ')
+    print('')
