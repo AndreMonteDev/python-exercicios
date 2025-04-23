@@ -1,3 +1,5 @@
+# Informa qual o maior peso e o menor peso entre 5 pesos
+
 maior = float(0)
 menor = float(0)
 
