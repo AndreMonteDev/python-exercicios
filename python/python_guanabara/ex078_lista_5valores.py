@@ -1,3 +1,4 @@
+# Lê 5 valores, informa qual o maior, qual o menor e as posições
 lista = []
 for c, v in enumerate(range(0, 5)):
     lista.append(int(input(f'Digite um valor da posição {c}: ')))

@@ -8,7 +8,7 @@ while True:
         lista.append(numero)
         print('Valor adicionado com sucesso...')
     continuar = input('Deseja continuar? [S/N] ')
-    if continuar == 'n':
+    if continuar in 'Nn':
         break
 
 print(f'Você adicionou os valores {sorted(lista)}')
