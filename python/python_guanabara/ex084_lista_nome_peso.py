@@ -22,8 +22,16 @@ for p in pessoas:
     if pesadas == 0 or p[1] >= pesadas:
         pesadas = p[1]
 
-
+for p in pessoas:
+    if p[1] == leves:
+        p_leves.append(p[0])
+    if p[1] == pesadas:
+        p_pesadas.append(p[0])
+print('-=' * 30)
+print(f'Ao todo, você cadastrou {n_pessoas}.')
 print(pessoas)
-print(pesadas)
-print(leves)
+print(f'O menor peso foi de {leves}Kg. Peso de {p_leves}')
+print(f'O maior peso foi de {pesadas}Kg. Peso de {p_pesadas}')
+
+
 
