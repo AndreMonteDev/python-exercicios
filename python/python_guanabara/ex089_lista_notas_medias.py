@@ -24,10 +24,11 @@ print(boletim)
 print('=' * 25)
 print(f'{"BOLETIM":^25}')
 print('=' * 25)
-print('No.  NOME           MÉDIA')
+print(f'{"No.":<4}{"NOME":<12}{"MÉDIA":>9}')
 print('-' * 25)
 for i, aluno in enumerate(boletim):
-    print(f'{i:<2}   {aluno[0]}', f'{((aluno[1][0] + aluno[1][1])/2):>14}')
+    media = (aluno[1][0] + aluno[1][1])/2
+    print(f'{i:<4}{aluno[0]:<12}{media:>9.2f}')
 print('-' * 25)
 while True:
     mostrar = int(input('Mostrar notas de qual aluno? (999 interropmpe): '))
@@ -35,7 +36,3 @@ while True:
         break
     else:
         print(f'As notas de {boletim[mostrar][0]} são {boletim[mostrar][1]}')
-
-
-
-
