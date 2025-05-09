@@ -1,3 +1,5 @@
+# Cadastro de aluno e notas e exibição de média e boletim
+
 nome = ''
 n1 = 0
 n2 = 0

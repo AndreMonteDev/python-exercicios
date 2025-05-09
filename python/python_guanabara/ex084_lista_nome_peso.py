@@ -10,7 +10,7 @@ p_leves = []
 p_pesadas = []
 while continuar != 'n':
     dados.append(str(input('Nome: ')))
-    dados.append(int(input('Peso: ')))
+    dados.append(float(input('Peso: ')))
     pessoas.append(dados[:])
     dados.clear()
     n_pessoas += 1
@@ -28,7 +28,7 @@ for p in pessoas:
     if p[1] == pesadas:
         p_pesadas.append(p[0])
 print('-=' * 30)
-print(f'Ao todo, você cadastrou {n_pessoas}.')
+print(f'Ao todo, você cadastrou {n_pessoas} pessoas.')
 print(pessoas)
 print(f'O menor peso foi de {leves}Kg. Peso de {p_leves}')
 print(f'O maior peso foi de {pesadas}Kg. Peso de {p_pesadas}')

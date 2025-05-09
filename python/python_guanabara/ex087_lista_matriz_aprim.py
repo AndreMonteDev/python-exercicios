@@ -1,3 +1,5 @@
+# recebe numeros, inclui numa matriz 3x3, exibe a soma dos valores pares, a soma dos valores da 3ª coluna e o maior valor da 2ª coluna
+
 matriz = []
 valores = []
 soma_pares = 0
