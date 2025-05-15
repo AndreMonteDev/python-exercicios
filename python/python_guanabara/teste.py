@@ -1,8 +1,11 @@
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 3, 4, 2, 2, 4, 5, 3, 1]
-lista.sort()
-print(lista)
-while 2 in lista:
-    lista.remove(2)
-print(lista)
-for c, v in enumerate(lista):
-    print(f'({c}) {v}')
+filmes = {'nome': 'Star Wars', 'tempo' : 96, 'classificacao': 14, 'nota' : 5.5}
+
+print(filmes)
+print(filmes.items())
+print(filmes.keys())
+print(filmes.values())
+print('CHAVE          VALOR')
+for k, v in filmes.items():
+    print(f'{k:<14} {v}')
+
+print(filmes['nome'])
