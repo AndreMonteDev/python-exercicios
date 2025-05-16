@@ -1,4 +1,4 @@
-# recebe numeros e inclui numa matriz 3x3
+# recebe numeros e inclui em uma matriz 3x3
 matriz = []
 valores = []
 for x in range(3):
