@@ -26,4 +26,4 @@ print('- Lista das pessoas que estão acima da média: ')
 
 for pessoa in cadastro:
     if pessoa['idade'] > idade_media:
-        print(f'{pessoa.keys()} = {pessoa.values()}')
+        print(f'{pessoa}')
