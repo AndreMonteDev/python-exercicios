@@ -15,7 +15,7 @@ print('-=' * 40)
 for k, v in aproveitamento.items():
     print(f'O campo {k} tem o valor {v}.')
 print('-=' * 40)
-print(f'O jogador {aproveitamento["nome"]} jogou {qtd_partidas}.')
+print(f'O jogador {aproveitamento["nome"]} jogou {qtd_partidas} partidas.')
 for i, gol in enumerate(partidas):
     print(f'    => Na partida {i}, fez {gol} gols.')
 print(f'Foi um total de {aproveitamento["total"]} gols.')  
