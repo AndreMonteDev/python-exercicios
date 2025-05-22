@@ -1,10 +1,12 @@
+# cadastra pessoas e depois informa os dados detalhados
+
 cadastro = []
 pessoas = {}
 mulheres = []
 soma_idade = 0
 while True:
     pessoas['nome'] = str(input('Nome: '))
-    pessoas['sexo'] = str(input('Sexo: [M/F] '))
+    pessoas['sexo'] = str(input('Sexo: [M/F] ')).upper()[0]
     pessoas['idade'] = int(input('Idade: '))
     cadastro.append(pessoas.copy())
     continuar = str(input('Quer continuar? [S/N] '))

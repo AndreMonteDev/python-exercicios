@@ -1,3 +1,5 @@
+# Cadastra nome de jogadores e gols por partida e depois exibe
+
 aproveitamento ={}
 partidas = []
 aproveitamento['nome'] = str(input('Nome do Jogador: '))
@@ -6,7 +8,7 @@ p = 0
 if qtd_partidas != 0:
     for p in range(qtd_partidas):
         partidas.append(int(input(f'Quantos gols na partida {p}? ')))
-    aproveitamento['gols'] = partidas
+    aproveitamento['gols'] = partidas[:]
     aproveitamento['total'] = sum(partidas)
 
 print('-=' * 40)
