@@ -1,3 +1,5 @@
+# cadastra nome, ano de nascimento, ctps e etc... e informa dados e idade para se aposentar
+
 import datetime
 
 ano_atual = datetime.datetime.now().year
