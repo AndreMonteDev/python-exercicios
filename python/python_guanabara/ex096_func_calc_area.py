@@ -1,3 +1,4 @@
+# Função que calcula uma área
 def area(l, c):
     a = l * c
     print(f'A área de um terrano de {l:.2f} x {c:.2f} metros é de {a:.2f}m2')
