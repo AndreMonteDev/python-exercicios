@@ -38,6 +38,9 @@ def conta_personal(x, y, z):
     print('FIM')
     print('-=' * 20)
 
+
+conta10()
+conta_menos10()
 print('Agora é sua vez de personalizar a contagem!')
 x = int(input('Início: '))
 y = int(input('Fim: '))
